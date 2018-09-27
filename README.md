@@ -1,3 +1,3 @@
 # pandas_http_log
-Extraction of datas from zeb server log file
+Extraction of datas from web server log file
 
