@@ -8,21 +8,6 @@ import matplotlib.pyplot as plt
 import pytz
 
 
-'''
-- tout en anglais
-- clean du style pep8
-- supprimer tout ce qui est inutile
-- fonction pour tout
-- fonction un peu plus globale pour les utiliser dans jupyter
-- mettre des exemples dans les fonctions
-le code dez jupyter ca va devenir
- import deciles_per_10min
- load_fie()
- process()
- show_graph_decile()
- 
-'''
-
 def load_log(log_name):
     data=pd.read_csv(log_name,
                  sep=r'\s(?=(?:[^"]*"[^"]*")*[^"]*$)(?![^\[]*\])', 
@@ -51,11 +36,11 @@ We call __tic__ the index of a segment.
 
 For example, say duration = 10 minutes, the 8th segment is [70,80]. Its tic
 is 7. It is convenient to refer to this segment as the tic 7.
-Hence, the tic n refers to the time segment [(n-1)*duration, n*duration].
+Hence, the tic n refers to the time segment [n*duration, (n+1)*duration].
 '''
 
 def add_tics(data,duration):
-    data['tics']=data['time'].apply(lambda x : time_to_minutes(x)//duration)
+    data['tics'] = data['time'].apply(lambda x : time_to_minutes(x)//duration)
 
 
 def deciles(data,tic):
