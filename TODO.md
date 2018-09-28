@@ -1,6 +1,8 @@
 #TODO
-- [ ] clean decile python code
-- [ ] add example log file
+- [x] clean decile python code
+- [x] create example log file "c.log"
+- [x] add example log file
+- [ ] test example log file
 - [ ] add screenshots
 - [ ] add salml notebook including code
 - [ ] add rest of code
