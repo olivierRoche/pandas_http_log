@@ -7,3 +7,8 @@
 - [ ] add screenshots
 - [ ] add salml notebook including code
 - [ ] add rest of code
+- [ ] autodetect directory or file
+- [ ] take pattern as entry like "/tmp/\*.log" using globbing
+- [ ] rebuild graphs handling multiple days
+one day
+- [ ] auto detect log format
